@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         imgView.image = UIImage(named: images[0])
     }
 
-
+    // 페이지가 변하면 호출됨
     @IBAction func pageChange(_ sender: UIPageControl) {
         // 페이지 컨트롤의 현재페이지를 갖고옴 -> 현재 페이지에 해당하는 이미지 파일의 이름을 배열에서 갖고옴 -> 이미지 뷰에 할당
         imgView.image = UIImage(named: images[pageControl.currentPage])
